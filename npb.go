@@ -106,3 +106,23 @@ func (c *Client) ShowNtp(session *ssh.Session) (NtpInfo, error) {
 	json.Unmarshal(readBytes.Bytes(), &returnData)
 	return returnData, nil
 }
+
+// Show Interface Info
+func (c *Client) ShowInt(session *ssh.Session) (IntInfo, error) { //(IntInfo, error) {
+	//var rawData RawIntInfo
+	var returnData IntInfo
+	var readBytes bytes.Buffer
+
+	session.Stdout = &readBytes
+	err := session.Run("show interfaces status | json")
+	if err != nil {
+		return returnData, err
+	}
+
+	//fmt.Println(readBytes.String())
+	json.Unmarshal(readBytes.Bytes(), &returnData)
+	//fmt.Printf("%+v\n", returnData)
+	//fmt.Printf("%#v\n", returnData)
+
+	return returnData, nil
+}
