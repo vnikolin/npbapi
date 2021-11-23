@@ -418,37 +418,3 @@ type IntInfo struct {
 		} `json:"Management1"`
 	} `json:"interfaceStatuses"`
 }
-
-/*
-"interfaceStatuses": {
-	"Ethernet23/1": {
-		"vlanInformation": {
-			"interfaceMode": "bridged",
-			"vlanId": 1,
-			"interfaceForwardingModel": "bridged"
-		},
-		"bandwidth": 100000000000,
-		"interfaceType": "Not Present",
-		"description": "",
-		"autoNegotiateActive": false,
-		"duplex": "duplexFull",
-		"autoNegotigateActive": false,
-		"linkStatus": "errdisabled",
-		"lineProtocolStatus": "notPresent"
-	},
-	"Ethernet1/1": {
-		"vlanInformation": {
-			"vlanExplanation": "in Po2",
-			"interfaceForwardingModel": "dataLink"
-		},
-		"bandwidth": 100000000000,
-		"interfaceType": "100GBASE-FR",
-		"description": "\"100GE_rdm551924el1_et-0/0/42\"",
-		"autoNegotiateActive": false,
-		"duplex": "duplexFull",
-		"autoNegotigateActive": false,
-		"linkStatus": "connected",
-		"lineProtocolStatus": "up"
-	},
-
-*/
