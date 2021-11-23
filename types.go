@@ -60,6 +60,7 @@ type IntInfo struct {
 		Ethernet_1_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -67,6 +68,7 @@ type IntInfo struct {
 		Ethernet_2_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -74,6 +76,7 @@ type IntInfo struct {
 		Ethernet_3_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -81,6 +84,7 @@ type IntInfo struct {
 		Ethernet_4_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -88,6 +92,7 @@ type IntInfo struct {
 		Ethernet_5_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -95,6 +100,7 @@ type IntInfo struct {
 		Ethernet_6_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -102,6 +108,7 @@ type IntInfo struct {
 		Ethernet_7_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -109,6 +116,7 @@ type IntInfo struct {
 		Ethernet_8_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -116,6 +124,7 @@ type IntInfo struct {
 		Ethernet_9_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -123,6 +132,7 @@ type IntInfo struct {
 		Ethernet_10_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -137,6 +147,7 @@ type IntInfo struct {
 		Ethernet_12_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -144,6 +155,7 @@ type IntInfo struct {
 		Ethernet_13_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -151,6 +163,7 @@ type IntInfo struct {
 		Ethernet_14_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -158,6 +171,7 @@ type IntInfo struct {
 		Ethernet_15_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -165,6 +179,7 @@ type IntInfo struct {
 		Ethernet_16_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -172,6 +187,7 @@ type IntInfo struct {
 		Ethernet_17_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -179,6 +195,7 @@ type IntInfo struct {
 		Ethernet_18_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -186,6 +203,7 @@ type IntInfo struct {
 		Ethernet_19_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -193,6 +211,7 @@ type IntInfo struct {
 		Ethernet_20_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -200,6 +219,7 @@ type IntInfo struct {
 		Ethernet_21_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -207,6 +227,7 @@ type IntInfo struct {
 		Ethernet_22_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -214,6 +235,7 @@ type IntInfo struct {
 		Ethernet_23_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -221,6 +243,7 @@ type IntInfo struct {
 		Ethernet_24_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -228,6 +251,7 @@ type IntInfo struct {
 		Ethernet_25_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -235,6 +259,7 @@ type IntInfo struct {
 		Ethernet_26_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -242,6 +267,7 @@ type IntInfo struct {
 		Ethernet_27_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -249,6 +275,7 @@ type IntInfo struct {
 		Ethernet_28_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -256,6 +283,7 @@ type IntInfo struct {
 		Ethernet_29_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -263,6 +291,7 @@ type IntInfo struct {
 		Ethernet_30_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -270,6 +299,7 @@ type IntInfo struct {
 		Ethernet_31_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -277,6 +307,7 @@ type IntInfo struct {
 		Ethernet_32_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -284,6 +315,7 @@ type IntInfo struct {
 		Ethernet_33_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -291,6 +323,7 @@ type IntInfo struct {
 		Ethernet_34_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -298,6 +331,7 @@ type IntInfo struct {
 		Ethernet_35_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -305,6 +339,7 @@ type IntInfo struct {
 		Ethernet_36_1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -312,6 +347,7 @@ type IntInfo struct {
 		PortChannel1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -319,6 +355,7 @@ type IntInfo struct {
 		PortChannel2 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -326,6 +363,7 @@ type IntInfo struct {
 		PortChannel3 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -333,6 +371,7 @@ type IntInfo struct {
 		PortChannel4 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -340,6 +379,7 @@ type IntInfo struct {
 		PortChannel5 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -347,6 +387,7 @@ type IntInfo struct {
 		PortChannel6 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -354,6 +395,7 @@ type IntInfo struct {
 		PortChannel7 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -361,6 +403,7 @@ type IntInfo struct {
 		PortChannel8 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
@@ -368,6 +411,7 @@ type IntInfo struct {
 		Management1 struct {
 			VlanInformation struct {
 				VlanExplanation string `json:"vlanExplanation"`
+				InterfaceMode   string `json:"interfaceMode"`
 			} `json:"vlanInformation"`
 			BandWidth  int    `json:"bandwidth"`
 			LinkStatus string `json:"linkStatus"`
