@@ -20,16 +20,8 @@ func main() {
 
 	client := npbapi.NpbClient("x.x.x.x", "userid", "password")
 
-	session, err := client.ConnectSSH()
-	if err != nil {
-		panic(err)
-	}
-
-	defer client.CloseSSH(session)
-
-	version, err := client.ShowVersion(session)
-
-	fmt.Printf("%+v\n", version)
+	version, err := npbapi.ShowVersion(client)
+	fmt.Printf("%#v\n", version)
 	fmt.Println(err)
 
 }

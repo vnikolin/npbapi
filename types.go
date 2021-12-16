@@ -30,7 +30,7 @@ type HostInfo struct {
 //NtpInfo
 type NtpInfo struct {
 	Status            string `json:"status"`
-	PollingInterfal   int    `json:"pollingInterval"`
+	PollingInterval   int    `json:"pollingInterval"`
 	Stratum           int    `json:"stratum"`
 	MaxEstimatedError int    `json:"maxEstimatedError"`
 	Server            string `json:"server"`

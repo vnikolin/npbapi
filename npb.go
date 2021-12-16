@@ -3,17 +3,20 @@ package npbapi
 import (
 	"bytes"
 	"encoding/json"
-
-	"golang.org/x/crypto/ssh"
 )
 
 // Show NPB Version
-func (c *Client) ShowVersion(session *ssh.Session) (VersionInfo, error) {
+func (client *Client) ShowVersion() (VersionInfo, error) {
 	var version VersionInfo
 	var readBytes bytes.Buffer
 
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return version, err
+	}
+	defer client.CloseSSH(session)
 	session.Stdout = &readBytes
-	err := session.Run("show version | json")
+	err = session.Run("show version | json")
 	if err != nil {
 		return version, err
 	}
@@ -24,12 +27,17 @@ func (c *Client) ShowVersion(session *ssh.Session) (VersionInfo, error) {
 }
 
 // Show NPB Host Info
-func (c *Client) ShowHostname(session *ssh.Session) (HostInfo, error) {
+func (client *Client) ShowHostname() (HostInfo, error) {
 	var returnData HostInfo
 	var readBytes bytes.Buffer
 
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return returnData, err
+	}
+	defer client.CloseSSH(session)
 	session.Stdout = &readBytes
-	err := session.Run("show hostname | json")
+	err = session.Run("show hostname | json")
 	if err != nil {
 		return returnData, err
 	}
@@ -39,13 +47,18 @@ func (c *Client) ShowHostname(session *ssh.Session) (HostInfo, error) {
 }
 
 // Show NPB Power Info
-func (c *Client) ShowPower(session *ssh.Session) (PowerInfo, error) {
+func (client *Client) ShowPower() (PowerInfo, error) {
 	var rawData RawPowerInfo
 	var returnData PowerInfo
 	var readBytes bytes.Buffer
 
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return returnData, err
+	}
+	defer client.CloseSSH(session)
 	session.Stdout = &readBytes
-	err := session.Run("show environment power | json")
+	err = session.Run("show environment power | json")
 	if err != nil {
 		return returnData, err
 	}
@@ -61,12 +74,17 @@ func (c *Client) ShowPower(session *ssh.Session) (PowerInfo, error) {
 }
 
 // Show NPB NTP Info
-func (c *Client) ShowNtp(session *ssh.Session) (NtpInfo, error) {
+func (client *Client) ShowNtp() (NtpInfo, error) {
 	var returnData NtpInfo
 	var readBytes bytes.Buffer
 
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return returnData, err
+	}
+	defer client.CloseSSH(session)
 	session.Stdout = &readBytes
-	err := session.Run("show ntp status | json")
+	err = session.Run("show ntp status | json")
 	if err != nil {
 		return returnData, err
 	}
@@ -76,12 +94,17 @@ func (c *Client) ShowNtp(session *ssh.Session) (NtpInfo, error) {
 }
 
 // Show Interface Info
-func (c *Client) ShowInt(session *ssh.Session) (IntInfo, error) { //(IntInfo, error) {
+func (client *Client) ShowInt() (IntInfo, error) {
 	var returnData IntInfo
 	var readBytes bytes.Buffer
 
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return returnData, err
+	}
+	defer client.CloseSSH(session)
 	session.Stdout = &readBytes
-	err := session.Run("show interfaces status | json")
+	err = session.Run("show interfaces status | json")
 	if err != nil {
 		return returnData, err
 	}
