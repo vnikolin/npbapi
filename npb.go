@@ -113,3 +113,24 @@ func (client *Client) ShowInt() (IntInfo, error) {
 
 	return returnData, nil
 }
+
+// Show DNS Info
+func (client *Client) ShowDns() (DnsInfo, error) {
+	var returnData DnsInfo
+	var readBytes bytes.Buffer
+
+	session, err := client.ConnectSSH()
+	if err != nil {
+		return returnData, err
+	}
+	defer client.CloseSSH(session)
+	session.Stdout = &readBytes
+	err = session.Run("show hosts | json")
+	if err != nil {
+		return returnData, err
+	}
+
+	json.Unmarshal(readBytes.Bytes(), &returnData)
+
+	return returnData, nil
+}

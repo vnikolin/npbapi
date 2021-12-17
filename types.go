@@ -418,3 +418,9 @@ type IntInfo struct {
 		} `json:"Management1"`
 	} `json:"interfaceStatuses"`
 }
+
+//DnsInfo
+type DnsInfo struct {
+	DomainName  string   `json:"domainName"`
+	NameServers []string `json:"nameServers"`
+}
